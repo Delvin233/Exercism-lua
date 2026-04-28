@@ -1,0 +1,32 @@
+public static class DifferenceOfSquares
+{
+    public static int CalculateSquareOfSum(int max)
+    {
+        //throw new NotImplementedException("You need to implement this method.");
+        int result = 0;
+        for (int i = 1; i <= max; i ++)
+        {
+            result += i;
+            
+        }
+        return result * result;
+    }
+
+    public static int CalculateSumOfSquares(int max)
+    {
+        //throw new NotImplementedException("You need to implement this method.");
+        int result = 0;
+        for (int i = 1; i <= max; i++)
+        {
+            result += (i * i);
+           
+        }
+         return result;
+    }
+
+    public static int CalculateDifferenceOfSquares(int max)
+    {
+        //throw new NotImplementedException("You need to implement this method.");
+        return CalculateSquareOfSum(max) - CalculateSumOfSquares(max);
+    }
+}
